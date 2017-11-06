@@ -1,0 +1,7 @@
+icl_translation:
+  actions:
+    create: Created icl_translation 
+    update: 
+      message: Updated
+      priority: 12
+  delete: Deleted
