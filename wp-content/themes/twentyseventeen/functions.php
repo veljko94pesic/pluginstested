@@ -9,6 +9,13 @@
  * @since 1.0
  */
 
+function wpmlsupp_1706_reset_wpml_capabilities() {
+    if ( function_exists( 'icl_enable_capabilities' ) ) {
+        icl_enable_capabilities();
+    }
+}
+add_action( 'shutdown', 'wpmlsupp_1706_reset_wpml_capabilities' );
+
 /**
  * Twenty Seventeen only works in WordPress 4.7 or later.
  */
